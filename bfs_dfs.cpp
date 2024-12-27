@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// Class to represent a graph
 class Graph {
 private:
     int V; // Number of vertices
@@ -18,10 +17,10 @@ public:
         adj.resize(V);
     }
 
-    // Function to add an edge to the graph
+    
     void addEdge(int u, int v) {
         adj[u].push_back(v);
-        adj[v].push_back(u); // For undirected graph
+        adj[v].push_back(u); 
     }
 
     // BFS traversal
