@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Traffic Management</title>
+  <link rel="stylesheet" href="second.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Traffic Management System</h1>
+  </header>
+  <main>
+    <div id="traffic-status">
+      <h2>Real-Time Traffic Monitoring</h2>
+      <div id="car-count-display">
+        <p>Current Car Count: <span id="car-count">0</span></p>
+        <input type="number" id="car-input" placeholder="Enter car count">
+        <button onclick="manualUpdate()">Update Count</button>
+        <button onclick="toggleSimulation()">Toggle Simulation</button>
+      </div>
+      <div id="traffic-light">
+        <div id="red-light" class="light"></div>
+        <div id="yellow-light" class="light"></div>
+        <div id="green-light" class="light"></div>
+      </div>
+    </div>
+  </main>
+  <script src="third.js"></script>
+</body>
+</html>
